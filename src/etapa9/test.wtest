@@ -1,0 +1,48 @@
+import Golondrina.*
+import comidas.*
+import roque.*
+import masAves.*
+import susana.*
+
+
+test "Golondrinas"
+{
+	
+	
+	var juliana=new Golondrina()
+	var melina=new Golondrina()
+	var tatiana=new Golondrina()
+	
+	juliana.comer(alpiste,50)
+	melina.comer(mondongo,9)
+	tatiana.comer(sorgo,8)
+	melina.volar(130)
+	tatiana.volar(40)
+	
+	assert.equals(200,juliana.energia())
+	assert.equals(760,melina.energia())
+	assert.equals(22, tatiana.energia())
+	assert.that(!juliana.estaFeliz())
+	assert.that(!juliana.estaDebil())
+	assert.that(melina.estaFeliz())
+	assert.that(tatiana.estaDebil())
+	
+}
+  
+test "Golondrina come"
+{
+	var juliana=new Golondrina()
+	var melina=new Golondrina()
+	var tatiana=new Golondrina()
+	var pirula=new Paloma()
+	var pirincha=new Paloma()
+	
+	
+	juliana.comer(alpiste,50)
+	melina.comer(mondongo,9)
+	tatiana.comer(sorgo,8)
+	pepon.comer(alpiste,100)
+	pirula.comer(alpiste,100)
+	pirincha.volar(20)
+	
+}
